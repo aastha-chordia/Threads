@@ -8,3 +8,9 @@ public class MyRunnable implements Runnable {
             try {
                 Thread.sleep(500); // Simulate processing time
             } 
+            catch (InterruptedException e) {
+                System.out.println("Runnable thread interrupted");
+            }
+        }
+    }
+}
