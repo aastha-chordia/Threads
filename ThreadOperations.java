@@ -7,5 +7,10 @@ public class ThreadOperations {
         MyThread t1 = new MyThread();
         t1.start();
         try {
-            t1.join(); // Wait for this thread to complete
-        } 
+            t1.join(); 
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    
