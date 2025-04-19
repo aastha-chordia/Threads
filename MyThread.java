@@ -8,3 +8,9 @@ public class MyThread extends Thread {
             try {
                 Thread.sleep(500); // Sleep to simulate delay
             } 
+            catch (InterruptedException e) {
+                System.out.println("Thread interrupted");
+            }
+        }
+    }
+}
