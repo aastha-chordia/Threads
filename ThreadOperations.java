@@ -12,5 +12,5 @@ public class ThreadOperations {
             e.printStackTrace();
         }
     }
-
-    
+    public void runRunnableClass() {
+        
