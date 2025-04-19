@@ -17,5 +17,10 @@ public class ThreadOperations {
         Thread t2 = new Thread(new MyRunnable());
         t2.start();
         try {
-            t2.join(); // Wait for this thread to complete
+            t2.join(); 
         } 
+        catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
